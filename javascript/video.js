@@ -99,7 +99,7 @@ closeBarMenu.addEventListener("click", () => {
 });
 // console.log (closeSlideDiv)
 closeSlideDiv.forEach((e)=>{e.addEventListener("click" , ()=>{
-  alert("hello")
+  // alert("hello")
   document.body.style.background="#fff";
     smallVideoDesc.style.bottom="-100%";
 })});
@@ -823,7 +823,7 @@ async function addComment(comments) {
 // infinite scroll 
 videoCon.onscroll = () => {
   // console.log(videoCon.scrollHeight ,videoCon.scrollTop );
-  if (scrollTrigger && videoCon.scrollHeight < videoCon.scrollTop + 700) {
+  if (scrollTrigger && videoCon.scrollHeight < videoCon.scrollTop + 1000) {
     if (nextToken !== undefined) {
       scrollTrigger = false;
       sendVideoRequest(null, 10, nextToken);
@@ -832,7 +832,7 @@ videoCon.onscroll = () => {
   }
   if (
     commentScrollTrigger &&
-    videoCon.scrollHeight < videoCon.scrollTop + 700
+    videoCon.scrollHeight < videoCon.scrollTop + 1000
   ) {
     if (comNextToken !== undefined) {
       commentScrollTrigger = false;
