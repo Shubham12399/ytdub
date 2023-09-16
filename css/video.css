@@ -1,0 +1,40 @@
+.play-video-playlist-video-item-thumbnail{
+    min-width: 110px;
+    width: 110px;
+}
+.play-video-video-img-con{
+    min-width: 160px;
+    width: 160px;
+}
+.playlist-video-item{
+    padding-right: .75rem;
+}
+
+.status-icons {
+    width: 24px;
+    height: 24px;
+    padding: 2px 0;
+    /* background-color: red; */
+}
+/* #video-play-title{
+    position: relative;
+}
+#video-play-title::after{
+    content:"more";
+    display: block;
+    position: absolute;
+    font-size: .813rem;
+    bottom: 0; right: 1.15rem;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+} */
+#slidable-container{
+    transition: all .4s ease;
+}
+@media screen and (min-width:640px) {
+    .status-icons{
+        width: 24px;
+        height: 24px;
+    }
+}

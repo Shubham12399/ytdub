@@ -1,0 +1,130 @@
+*:not(.snip-menu) .lg-menu-link {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.snip-menu .lg-menu-link {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: visible;
+  opacity: 0;
+  user-select: none;
+}
+#snip-menu-id {
+  transition: all 0.3s ease;
+}
+#snip-menu-id * {
+  transition: all 0.3s ease, opacity 0.3s ease;
+}
+.pg-link{
+  border-radius: .75rem;
+}
+.snip-menu {
+  padding-left: 8px !important;
+  pointer-events: none;
+}
+
+.snip-menu .show-hover {
+  padding-left: 0.5rem;
+}
+
+.show-hover{
+  cursor: pointer;
+}
+#bar_menu {
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.show-hover:hover,
+.hover_effect {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.cstm-w-manage {
+  width: 73px;
+  /* overflow-x: hidden; */
+  position: relative;
+  z-index: 100;
+}
+.tooltip-link {
+  display: none;
+}
+
+.cstm-w-manage .tooltip-link::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+  background: #030303;
+  position: absolute;
+  left: -0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease, margin 0.2s ease;
+}
+
+.snip-menu .icon:hover ~  .tooltip-link {
+  margin-left: 3rem;
+  opacity: 1;
+}
+.icon{
+  pointer-events: auto;
+}
+.snip-menu .icon:hover ~ .tooltip-link::before {
+  margin-left: -0.2rem;
+  opacity: 1;
+}
+
+.snip-menu {
+  width: 90px;
+  padding-left: 0.75rem;
+  overflow-x: visible;
+  /* background-color: red; */
+}
+
+@media screen and (min-width: 640px) {
+  .left-zero {
+    left: 0;
+  }
+  .left-zero.snip-menu {
+    width: 250px;
+    pointer-events: auto;
+    /* min-width: 210px; */
+    padding-left: 0 !important;
+    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.06);
+    /* background-color: red; */
+  }
+  .left-zero.snip-menu .cstm-w-manage {
+    width: 250px;
+    /* background-color: red; */
+  
+  }
+  .left-zero.snip-menu .show-hover {
+    padding-left: 1rem;
+  }
+  .left-zero .lg-menu-link {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: visible;
+    opacity: 1;
+    user-select: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+ 
+  .cstm-w-manage .tooltip-link {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    margin-left: 2.8rem;
+    margin-top: 8px;
+    padding: 0.15rem 1rem;
+    color: white;
+    background-color: #030303;
+    border-radius: 0.25rem;
+    opacity: 0;
+    transition: opacity 0.2s ease, margin 0.2s ease;
+  }
+}

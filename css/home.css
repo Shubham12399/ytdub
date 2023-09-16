@@ -1,0 +1,63 @@
+
+
+.channel-logo {
+    min-width: 40px;
+    max-width: 40px;
+  }
+
+
+  .post-item{
+    transition: all .5s ease;
+    padding-bottom:.5rem;
+    cursor: pointer;
+  }
+  
+  /* sm:w-[47vw] lg:w-[25vw] */
+  @media screen and (min-width:640px) {
+
+    .page-con {
+      width: 100%;
+    }
+
+    .post-item {
+      max-width: 46vw;
+      transition: all .3s ease;
+      margin-bottom:1rem;
+      padding: .1rem;
+      border-radius: .75rem !important;
+    }
+    
+    .post-container {
+      width: calc(2 * 46vw + .5rem);
+      position: -webkit-sticky;
+    }
+    .video-details{
+        padding:.7rem .5rem ;
+      }
+      
+  }
+
+  @media screen and (min-width:1024px) {
+   
+    .post-item {
+      min-width: 26vw;
+      max-width: 26vw;
+    }
+
+    .post-lg-con .post-item{
+      max-width: 29vw;
+    }
+    .post-container {
+       width: calc(3 * 26vw + 1.1rem);
+      position: -webkit-sticky;
+    }
+
+    .post-lg-con {
+      width: calc(3 * 29.2vw + 1rem);
+      /* background-color: red; */
+    }
+
+    /* .post-item{
+        min-width: 400px;
+      } */
+  }

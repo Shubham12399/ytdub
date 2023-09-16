@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="red">
+<!-- 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ -->  
+
+    <title>YouTube</title>
+    
+ <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">  -->   
+ 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200" />
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200" rel="stylesheet" />  
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />     
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp:opsz,wght,FILL,GRAD@20..48,200..700,0..1,-50..400" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+ </head>
+ 
+<body onload="bodyLoader()">
+<div class="loader">
+    <img src="/storage/emulated/0/Images/YouTube-Logo.wine.svg" alt="image" id="loaderImage"></img>
+</div>  
+ <div class="body-sec">    
+        <div class="logo-link-nav">           
+            <div class=" bar-logo-sec">
+                <div class="bar ds-n-m" id="menu" onclick="toggleIconName()"><i class="material-symbols-rounded i-effect">menu</i></div>
+                <div class="logo"><img src="/storage/emulated/0/Images/YouTube-Logo.wine.svg" alt=""></img></div>
+            </div>
+       <div class="search-sec ds-n-m">
+         <input type="text" placeholder="Search..."> 
+         <div class="search-btn">
+         <i class="material-symbols-rounded i-effect">search</i>
+         </div>
+       </div>
+               <div class="link-sec">
+                   <i class="material-symbols-rounded ds-n-w i-effect ">cast</i>
+                   <i class="material-symbols-rounded ds-n-m i-effect">videocam</i>
+                   <i class="material-symbols-rounded ds-n-m i-effect">apps</i>
+                   <i class="material-symbols-rounded i-effect">notifications</i>
+                 <i class="material-symbols-rounded ds-n-w i-effect">search</i>
+                    <i class="material-icons i-effect" id="user">account_circle</i>
+                </div>           
+        </div>
+                 
+        <div class="nav-post-sec">
+            
+            <div class="navigation ds-n-m">     
+                <div class="nav-sec">
+                                              
+                <div class="icons-nav-sec">
+                   <div class="icon-sec">
+                       <i class="material-icons-round i-effect">home</i>
+                       <div class="icon-name">Home</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">explore</i></div>
+                       <div class="icon-name">Explore</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">add_circle</i></div>
+                       <div class="icon-name">Create</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">subscriptions</i></div>
+                       <div class="icon-name">Subscribed</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">video_library</i></div>
+                       <div class="icon-name">Library</div>
+                   </div>
+                </div>
+                                                
+                <div class="icons-nav-sec">
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">notifications</i></div>
+                       <div class="icon-name">Notification</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">cast</i></div>
+                       <div class="icon-name">Cast</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">search</i></div>
+                       <div class="icon-name">Search</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">account_circle</i></div>
+                       <div class="icon-name">Account</div>
+                   </div>
+                </div>
+                                               
+                <div class="icons-nav-sec">
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">info</i></div>
+                       <div class="icon-name">FAQ</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">settings</i></div>
+                       <div class="icon-name">Settings</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">block</i></div>
+                       <div class="icon-name">Report</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">history</i></div>
+                       <div class="icon-name">History</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">send</i></div>
+                       <div class="icon-name">Share</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">thumb_up</i></div>
+                       <div class="icon-name">Liked</div>
+                   </div>
+                   <div class="icon-sec">
+                       <div class="icon"><i class="material-symbols-rounded i-effect">play_arrow</i></div>
+                       <div class="icon-name">Unwatched</div>
+                   </div>
+                   </div>
+                </div> 
+                                   
+            </div>
+                                    
+            <div class="post-body"> 
+                
+                
+   <div class="home po-child">
+                     <div class="tag">
+                         <li id="explore"> <i class="material-symbols-rounded">explore</i><p>Explore</p></li>
+                         <li>All</li>
+                         <li>Mixed</li>
+                         <li>Music</li>
+                         <li>HTML</li>
+                         <li>Sewing</li>
+                         <li>Korean drama</li>
+                         <li>Microsoft Corporation</li>
+                         <li>Flowerpot</li>
+                         <li>Street Food</li>
+                         <li>Recently uploded</li>
+                         <li>Watched</li>
+                         <li>New to you</li>
+                         <a href="">SEND FEEDBACK</a>
+                     </div> 
+ <div class="home-grid">
+     <div class="banner">
+         <img src="/storage/emulated/0/Images/Youtube thumbnail/Banner/vecteezySummer-Beach-Backgroundfv0421_generated.jpg" alt=""></img>
+     </div>
+     
+     <div class="grid-items" onclick="playVideo()" id="fst-grid-items">
+        <img src="/storage/emulated/0/Images/Madhuram.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src="/storage/emulated/0/Images/Madhuram.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title">Madhuram Madhuram Song  </p>
+                <p>Happiness is my intension</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>
+     
+    <div class="grid-items" >
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221207_184847.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20230304_195201.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title">A buddhist story to keep your Mind in control | अपने दिमाग को नियंत्रण में रखने के लिए एक बौद्ध कहानी </p class="title">
+                <p>Happiness is my intension</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>  
+      
+      
+      
+          <div class="grid-items" >
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20230304_195201.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20230304_195201.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title"> 
+                    Tum Prem Ho - Reprise | Lyrical Video | Radha Krishn | Mohit Lalwani | Surya Raj Kamal
+                    
+                    
+                </p>
+                <p>MOhit Lalwani 20 lakh views - 3 years ago</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>  
+     
+     
+     
+     
+     <div class="grid-items" >
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221018_141756.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src=" /storage/emulated/0/DCIM/Screenshots/IMG_20221018_141756.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title"> 
+                    
+                  एकाग्रता_पर_विवेकानंद_के_विचार_|_Power_of_Concentration_|                                                                                                             _Secret_of_Swami_Vivekananda_Memory   
+                                
+                </p>
+                <p>MOhit Lalwani 20 lakh views - 3 years ago</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>  
+     
+     
+     
+          <div class="grid-items" >
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221207_185023.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src=" /storage/emulated/0/DCIM/Screenshots/IMG_20221207_185023.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title"> 
+                    
+                Kahe Tose Sajna Tohri Sajaniya (Official Video) Sachet Parampara | Kahe Tose Sajna | Mahakal Rec...   
+                                
+                </p>
+                <p>Mahakal Records 2.4 lakh views 2 weeks ago</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>  
+     
+     
+     
+     
+     
+     
+     
+ 
+        
+     <div class="grid-items" >
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221207_185558.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src=" /storage/emulated/0/DCIM/Screenshots/IMG_20221207_185558.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title"> 
+                    
+                Ram_Siya_Ram_|_Lofi_Version
+                                
+                </p>
+                <p>MOhit Lalwani 20 lakh views - 3 years ago</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>  
+     
+     
+         
+    <div class="grid-items" >
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221207_182443.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221207_182443.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title">Hare krishna loffi </p >
+                <p>Happiness is my intension</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>  
+     
+     
+     
+      
+      
+      
+       <div class="grid-items" >
+        <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221219_205018.jpg" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src="/storage/emulated/0/DCIM/Screenshots/IMG_20221207_182443.jpg" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title">Hare krishna loffi </p >
+                <p>Happiness is my intension</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>   
+      
+      
+      
+    
+      <div class="grid-items" >
+        <img src="/storage/emulated/0/Download/exammate website ui/48.png" alt=""></img>
+        <div class="detail">
+            <div class="det-img">
+                <img src=" /storage/emulated/0/Download/exammate website ui/48.png" alt=""></img>
+            </div>
+            <div class="det-con">
+                <p class="title"> 
+                    
+                Kahe Tose Sajna Tohri Sajaniya (Official Video) Sachet Parampara | Kahe Tose Sajna | Mahakal Rec...   
+                                
+                </p>
+                <p>Mahakal Records 2.4 lakh views 2 weeks ago</p>
+            </div>
+            <i class="material-symbols-rounded i-effect">more_vert</i>
+      </div>
+     </div>  
+     
+       
+      
+      
+      
+      
+      
+       
+                                                                                                                                                                                                                            
+   </div> 
+    
+
+   
+ </div>
+                 <div class="explore po-child">
+                     <i class="material-symbols-rounded i-effect" id="closeExplore" onclick=" closeexplore()">close</i>
+                     <h3>Create your own projects and Be Grade</h3>
+                     <p style="margin:1rem">
+                  utamur senectus deserunt in faucibus debet veri qui epicurei constituto       
+                     </p>
+                     <button>Create</button>
+                 </div>
+                 <div class="create po-child">
+                    <h1>Create</h1>
+                 </div>
+                 <div class="subscription po-child">
+                     <h1>Subscription</h1>
+                 </div>
+                 <div class="library po-child">
+                     <h1>Library</h1>
+                 </div>
+                 <div class="notification po-child">
+                     <h1>Notification</h1>
+                 </div>
+                 <div class="cast po-child">
+                     <h1>Cast</h1>
+                 </div> 
+                 <div class="search po-child">
+                     <h1>Search</h1>
+                 </div>
+                 <div class="user po-child">
+                     <h1>user</h1>
+                 </div>
+                 
+            </div>      
+        </div>
+     
+     
+     
+     <div class="video-interface">
+           <div class="left-sec"> 
+                   <i class="material-symbols-outlined back i-effect" onclick="backVideoInterface()"> arrow_back</i>       
+                <div class="video-sec">
+                    <div id="video"> 
+                    
+                    </div>
+                    <div class="videoDetail">
+                        <div class="hasTag">
+                            <a href="#">#spritual_life</a>
+                            <a href="#">#buddha</a>
+                            <a href="#">#dhamm</a>
+                            <a href="#">#dhyan</a>
+                            <a href="#">#meditation</a>
+                        </div>
+                        <div class="channelStatus">
+                            <h2>A buddhist story to keep your Mind in control | अपने दिमाग को नियंत्रण में रखने के लिए एक बौद्ध कहानी</h2>
+                            <div class="socialShareSec"> 
+                                <p>Edited on 9 Aug Thr </p>                            
+                               <div class="socialIcons"> 
+                                                          
+                                   <div class="icons">
+                                       <i class="material-symbols-rounded i-effect">thumb_up</i>
+                                       <span>Like</span>
+                                   </div>
+                                   <div class="icons">
+                                       <i class="material-symbols-rounded i-effect">thumb_down</i>
+                                       <span>Dislike</span>
+                                   </div>
+                                   <div class="icons">
+                                       <i class="material-symbols-rounded i-effect">reply</i>
+                                       <span>Send</span>
+                                   </div>
+                                   <div class="icons">
+                                       <i class="material-symbols-rounded i-effect">grade</i>
+                                       <span>Bookmark</span>
+                                   </div>
+                                   <div class="icons">
+                                     <i class="material-symbols-rounded i-effect">library_add</i>
+                                       <span>Add library</span>
+                                   </div>
+                                   
+                               </div>
+                               
+                            </div>
+                         </div>
+                </div>  
+                <hr>
+                <div class="channel-sec">
+                    <div class="logo">
+                        <img src="/storage/emulated/0/Images/Youtube thumbnail/channel logo/download.jpeg" alt=""></img>
+                        <p>Happiness is my intension</p>
+                    </div>
+                    <div class="subscribe-button">
+                        <button id="subscribe-btn">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <hr>  
+       </div>
+                <div class="comment-sec">
+                    <div class="comment-input">
+                        <span class="numberOfComment"><p>Comments</p><h4 id="numberOfComment">0</h4></span>
+                        <div class="com-user">
+                            <img src="/storage/emulated/0/Images/pngwing.com (21).png" alt=""></img>
+                        </div>
+                        <input type="text" placeholder="Comments..." id="commentValue">
+                        <i class="material-icons-round i-effect" onclick="addComment()">send</i>
+                    
+                    </div>
+                    <hr>
+                      <div class="commentAddCon">
+                     <!--  
+                    <div class="comments">
+                        <div class="com-user">
+                            <img src="/storage/emulated/0/Images/pngwing.com (21).png" alt=""></img>
+                            <span>Edited 2 days ago.</span>
+                        </div>
+                        <div class="com-text">
+                            <p> Faballus ! what designing you did . </p>
+                        </div>
+                        <hr>
+                    </div>
+                    --> 
+                    
+                    </div>
+                    
+                     
+                </div>                    
+            </div>
+            
+            
+            <!-- RIGHT SECTION -->
+            <div class="right-sec">                                 
+  
+ 
+
+		<div class="grid-items videoInterfaceSlider">
+			<img src="/storage/emulated/0/Images/Youtube thumbnail/img10.jpg" alt=""></img>
+			<div class="detail">
+				<div class="det-img">
+					<img class="videoInterfaceSliderLogo" src="/storage/emulated/0/Images/Youtube thumbnail/channel logo/download.jpeg" alt=""></img>
+				</div>
+				<div class="det-con">
+					<p class="title">A buddhist story to keep your Mind in control | अपने दिमाग को नियंत्रण में रखने के लिए एक बौद्ध कहानी </p>
+					<p>Happiness is my intension</p>
+				</div>
+				<i class="material-symbols-rounded i-effect videoInterfaceSliderIcon">more_vert</i>
+			</div>
+		</div>
+       
+   <!-- <div class="conLoader">		
+          	<svg>			
+          	    	<circle cx="70" cy="70" r="20"></circle>
+						<rect width="100" height="100"></rect>
+					</svg>
+      	</div>
+       -->
+       
+              
+     </div>
+        
+          
+        <footer class="ds-n-">
+            <div class="footer-sec">
+                
+                <div class="ft-icon-sec">                    
+                    <div class="ft-icon">
+                        <i class="material-icons-round i-effect" style="font-size:1.9rem">home</i>
+                    </div>    
+                    <div class="ft-icon-name">Home</div>                                       
+                </div>
+                
+                <div class="ft-icon-sec">                    
+                    <div class="ft-icon">
+                        <i class="material-symbols-rounded i-effect" style="">explore</i>
+                    </div>    
+                    <div class="ft-icon-name">Explore</div>                                       
+                </div>
+                
+                <div class="ft-icon-sec">                    
+                    <div class="ft-icon" id="ft-create">
+                      <i class="material-symbols-rounded i-effect">add_circle</i>
+                    </div>                                               
+                </div>
+                
+                <div class="ft-icon-sec">                    
+                    <div class="ft-icon">
+                        <i class="material-symbols-rounded  i-effect" style="">subscriptions</i>
+                    </div>    
+                    <div class="ft-icon-name">Subscriptions</div>                                       
+                </div>
+                
+                <div class="ft-icon-sec">                    
+                    <div class="ft-icon">
+                        <i class="material-symbols-rounded i-effect" style="">video_library</i>
+                    </div>    
+                    <div class="ft-icon-name">Library</div>                                       
+                </div>                
+            </div>
+            utinam laudem explicari mutat accumsan ancillae animal iudicabit no elaboraret dolores propriae fusce laudem graeco penatibus lectus sadipscing signiferumque idque
+        </footer>
+        <div class="focusor"></div>
+   </div>    
+  <script src="javaScript/main.js" ></script>
+</body>
+</html>
+ 
