@@ -509,7 +509,7 @@ async function setVideoContent() {
     playVideoChannelTitle.textContent = channelTitle;
     playVideoChannelSrc.setAttribute(
       "href",
-      `http://127.0.0.1:5500/pages/profile.html?channelId=${videoRef.items[0].snippet.channelId}`
+      `./profile.html?channelId=${videoRef.items[0].snippet.channelId}`
     );
     let morePlaylisttoken = "";
     let playlists = [];
