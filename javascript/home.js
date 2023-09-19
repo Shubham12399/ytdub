@@ -12,7 +12,7 @@ let scrollTrigger = false;
 const sendVideoRequest = async  function(numberOfRequests=9,token=null){
   let div = document.createElement("div");
   div.setAttribute("class" , `w-full mt-8 bg-gray-600 flex items-center justify-center loader`);
-  div.insertAdjacentHTML("afterbegin" , `<img src="../icon-svgs/Rolling-0.8s-200px.svg" />`);
+  div.insertAdjacentHTML("afterbegin" , `<img src="./icon-svgs/Rolling-0.8s-200px.svg" />`);
   homePage.appendChild(div);
  let [videos , nextPageToken] =  await getVideoData(numberOfRequests,token);
 //  mainHomePage.innerHTML="";
